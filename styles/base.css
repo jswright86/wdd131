@@ -106,15 +106,21 @@ main h2 {
 }
 main h3 {
     font-size: 2rem;
-    color: var(--text-color-light);
+    color: var(--text-color);
     text-align: center;
-    background-color: var(--primary-color);
     padding: var(--spacing);
-    margin: 40px;
-    width: 75%;
+    margin-left: 80px;
+    width: 60%;
     display: flex;
     float: left;
     justify-content: center;
+    border-bottom: #091820 2px solid;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+    padding-top:  0;
+
 }
 main h4 {
     
@@ -126,6 +132,7 @@ main h4 {
     padding: var(--spacing);
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
 }
 .card {
     grid-row: 1/ 3;
@@ -144,8 +151,9 @@ main h4 {
     display: flex;
     text-align: center;
     margin: 40px;
+    margin-bottom: 0;
     flex-direction: row; 
-    font-size: 30px;
+    font-size: 25px;
 }
 .profile-pic {
     
@@ -166,8 +174,8 @@ main h4 {
     text-align: center;
     align-items: center;
     flex-direction: row-reverse;
-    font-size: 30px;
-    width: 75%;
+    font-size: 25px;
+    width: 90%;
     margin: 40px;
     height: auto;
     
