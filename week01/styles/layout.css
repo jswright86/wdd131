@@ -4,7 +4,7 @@ body {
     grid-template: 1fr 1fr 1fr  / 1fr 1fr 1fr 1fr;
    
     height: 100vh;
-    width: 100%;
+   
 }
 
 header {
@@ -36,17 +36,19 @@ h1 {
 
 .nav {
     display: flex;
-    align-self: start;
-    flex-direction: row;
     align-items: center ;
-    justify-content: space-around;
     background-color: #000000;
-    height: 100%;
+    
     
 }
 .nav a {
+    display: block;
     color: #dcdcdc;
+    padding: .75rem;
     text-decoration: none;
+    text-align: center;
+    flex: 1 1 auto
+    
     
     
     
