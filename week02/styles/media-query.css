@@ -1,0 +1,47 @@
+
+
+:root {
+  --font-size: 16px;
+  --line-height: 1.5;
+  --font-family: "Roboto", sans-serif;
+  
+
+}
+
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  body {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+  }
+
+  header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #5B8BB3;
+    
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  section {
+    
+    padding: 1rem;
+    background-color: #F2F2F2;
+    
+  }

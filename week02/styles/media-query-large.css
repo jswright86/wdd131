@@ -1,0 +1,21 @@
+
+
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  @media screen and (min-width: 500px){
+    header{
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+    main {
+     grid-template-columns: 1fr 1fr;
+      
+    }
+  }
