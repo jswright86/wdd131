@@ -26,6 +26,13 @@ header {
     display: grid;
     grid-template-columns: auto auto;
 }
+main{
+    max-width: 599px;
+    height: auto;
+	margin: 0 auto;
+    display: grid;
+    justify-content: center;;  
+}
 h1 {
 	text-align: center;
 	
@@ -34,7 +41,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2rem;
+	font-size: 2rem;
 	color: white;
 	text-align: left;
 	margin: 1rem;
@@ -46,10 +53,20 @@ footer {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row ;
+    align-items: center;
+    background-color: #17223d;
 
+
+}
 
 figure {
-    margin: 1rem;
+    
+    flex-direction: column;
+    margin: 1 auto;
     
     
 }
@@ -78,13 +95,16 @@ figcaption {
 }
 
 #menu::before {
+    padding-right: 1rem;
 	content: "☰";
     color: #fff;
+    
 }
 
 #menu.open::before {
 	
 	content: "X";
+    color: #000;
 }
 
 .navigation {
@@ -92,16 +112,36 @@ figcaption {
 	flex-direction: column;
 	justify-content: space-around;
 	list-style: none;
-	background-color: #333;
-	color: #fff;
+	color: black;
+    
 }
-
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #b8bdca;
+    font-size: 1.75rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.navigation li {
+    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-top: .5rem;
+}
 .navigation a {
 	display: none;
-	padding: 1rem;
+	padding: .7rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: black;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+    border-radius: 10px;
 }
 
 
