@@ -89,9 +89,8 @@ nav {
 }
 
 figure {
-    height: 100px auto;
-    width: auto;
-    
+    height: 254.5px;
+    width: auto;    
     flex-direction: column;
     margin: .5rem auto;
     
@@ -99,7 +98,7 @@ figure {
 }
 img {
     max-width: 100%;
-    height: auto 200px;
+    height: 200px;
     width: auto;
     border-radius: 10px;
     
