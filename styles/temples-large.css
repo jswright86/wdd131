@@ -53,6 +53,7 @@ main{
     grid-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr auto;
+    padding: 2rem;
 
 }
 
@@ -73,7 +74,7 @@ h1 {
     align-items: center;
 }
 figure {
-    margin: auto;
+    margin: 2rem auto;
     
     
 }
