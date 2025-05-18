@@ -5,6 +5,22 @@
     font-family: 'Arial', sans-serif;
     font-weight: 700;
 }
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+.nunito-sans-uniquifier {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
 header {
     background-color: #17223d;
     display: grid;

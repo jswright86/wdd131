@@ -5,6 +5,22 @@
     font-family: 'Arial', sans-serif;
     font-weight: 700;
 }
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+.nunito-sans-uniquifier {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
 main{
     max-width: 1800px;
     height: auto;
@@ -70,7 +86,7 @@ footer {
 	color: #fff;
     flex-direction: row;
     background-color: #17223d;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     
 }
 .navigation a {
