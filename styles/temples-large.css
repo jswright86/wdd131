@@ -71,14 +71,14 @@ h1 {
     align-items: center;
 }
 figure {
-    height: 100px auto;
+    height: 361.78px ;
     width: auto;
     margin: 2rem auto;
 }
 img {
     max-width: 100%;
-    height: 300px auto;
-    width: auto;
+    height: auto;
+    width: 361.78px;
     border-radius: 10px;
 }
 figcaption {
