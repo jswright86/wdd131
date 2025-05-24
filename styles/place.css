@@ -1,6 +1,12 @@
+
+:root {
+    --primary-bg: #17223d;
+    --accent-color: #a70000;
+    --card-bg: rgba(214, 214, 214, 0.77);
+    --text-color: #333;
+    --header-footer-height: 15%;
+}
 * {
-   
-	
 	box-sizing: border-box;
     font-family: 'Arial', sans-serif;
     font-weight: 700;
