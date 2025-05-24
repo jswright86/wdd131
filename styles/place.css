@@ -155,7 +155,7 @@ main{
     display: block;
     margin-bottom: 1rem;
 }
-.weather.open {
+.button.hover{
     grid-row: 2/3;
     grid-column: 1/4;
     background-color: rgba(214, 214, 214, 0.77);
