@@ -22,3 +22,8 @@ const calculateWindChill = (temp, speed) => {
     return "N/A";
   }
 }
+const button = document.getElementById('myButton');
+button.addEventListener('click', function() {
+  // Code to execute when the button is clicked
+  alert('Button Clicked!');
+});
