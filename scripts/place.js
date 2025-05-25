@@ -22,8 +22,11 @@ const calculateWindChill = (temp, speed) => {
     return "N/A";
   }
 }
-const button = document.getElementById('myButton');
-button.addEventListener('click', function() {
-  // Code to execute when the button is clicked
-  alert('Button Clicked!');
-});
+let calculateWindChillDisplay = () => {
+  let temp = parseFloat(document.querySelector("#temp").textContent = "70"); // Default temperature for demonstration
+  let speed = parseFloat(document.querySelector("#speed").textContent = "5"); // Default speed for demonstration
+  let windChill = calculateWindChill(temp, speed);
+  document.querySelector("#windchill").textContent = windChill;
+} 
+// Update the wind chill display when the page loads
+
