@@ -105,25 +105,58 @@ const temples = [
   dedicated: "1993, June, 19",
   area: 72000,
   imageUrl:
-  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-california-temple-exterior-1518361-wallpaper.jpg"
+  "https://www.churchofjesuschrist.org/imgs/9fc6d53550ed3243fb8eca9ebceb284d4865e7db/full/640%2C/0/default"
 }
 ];
 
 // Create cards for all temples
 createTempleCard(temples);
 const oldtemples = document.querySelector('#Old');
-if (oldtemples) {
+
   oldtemples.addEventListener('click', () => {
     // Clear existing cards
-    document.querySelector('.temples').innerHTML = '';
+    
     // Filter and display only old temples (dedicated before 1900)
-    const filteredTemples = temples.filter(temple => {
-      const year = parseInt(temple.dedicated.split(',')[0]);
-      return year < 1900;
-    });
-    createTempleCard(filteredTemples);
+  // Remove existing cards
+  document.querySelector(".res-grid").innerHTML = "";
+  // Filter and display only old temples (dedicated before 1900)
+  const oldTemples = temples.filter(temple => temple.dedicated.includes('18'));
+  createTempleCard(oldTemples);
+});
+  const newtemples = document.querySelector('#New');
+
+  newtemples.addEventListener('click', () => {
+
+  document.querySelector(".res-grid").innerHTML = "";
+  // Filter and display only new temples (dedicated after 2000)
+  const newTemples = temples.filter(temple => temple.dedicated.includes('20'));
+  createTempleCard(newTemples); 
+ });
+  const largetemples = document.querySelector('#Large');
+  largetemples.addEventListener('click', () => {
+    // Clear existing cards
+    document.querySelector(".res-grid").innerHTML = "";
+    // Filter and display only large temples (area greater than 90,000 sq ft)
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    createTempleCard(largeTemples);
   });
-}
+  
+  const smalltemples = document.querySelector('#Small');
+  smalltemples.addEventListener('click', () => {
+    // Clear existing cards
+    document.querySelector(".res-grid").innerHTML = "";
+    // Filter and display only small temples (area less than 10,000 sq ft)
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    createTempleCard(smallTemples);
+  });
+ const hometemples = document.querySelector('#Home');
+  hometemples.addEventListener('click', () => {
+    // Clear existing cards
+    document.querySelector(".res-grid").innerHTML = "";
+    // Display all temples
+    createTempleCard(temples);
+  });
+  
   
 
 
