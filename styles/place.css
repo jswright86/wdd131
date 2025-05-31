@@ -55,6 +55,39 @@
     justify-content: center;
     
 }
+#west {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-bg);
+    color: var(--us-color);
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+#west::before {
+    content: "West";
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--us-color);
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+   
+}
+#west.open::after {
+    content: "W<tr><td>Temperature: 70F</td><td>Conditions: Sunny</td><td>Wind: 5 mph</td><td>Humidity: 65%</td></tr>";
+   
+}
+.open th {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--us-color);
+    padding: 1rem;
+    background-color: var(--accent-color);
+    text-align: center;
+}
 body {
     background-color: #f0f0f0;
     font-size: 1.2rem;

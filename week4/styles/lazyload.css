@@ -1,0 +1,21 @@
+img {
+    display: block;
+    display:flex;
+    width: 100%;
+    height: auto;
+    background: black;
+    animation: fadefromblack 0.5s ease-in-out;
+    gap: 0.5rem;
+   
+}
+
+@keyframes fadefromblack {
+    from {
+        opacity: 0;
+        background: black;
+    }
+    to {
+        opacity: 1;
+        background: transparent;
+    }
+}

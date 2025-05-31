@@ -30,3 +30,18 @@ let calculateWindChillDisplay = () => {
 } 
 // Update the wind chill display when the page loads
 
+const westButton = document.getElementById('west');
+westButton.addEventListener('click', function() {
+  const westWeather = document.createElement("tbody");
+  westWeather.innerHTML = '<tr><td>Temperature: 70F</td><td>Conditions: Sunny</td><td>Wind: 5 mph</td><td>Humidity: 65%</td></tr>';
+  // Replace 'th' with the actual table element you want to append to, e.g.:
+  const table = document.querySelector("#your-table-id"); // Change to your table's id or selector
+  if (table) {
+    table.appendChild(westWeather);
+  }
+});
+
+
+let names = ['Nancy','Blessing','Jorge','Svetlana','Bob'];
+let namesLength = names.map(name => name.length);
+console.log(namesLength); // [5, 8, 5, 8, 3]

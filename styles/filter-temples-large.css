@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .navigation a {
+        padding: 0.5rem;
+    }
+}
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  nunito-sans-uniquifier {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+main{
+    max-width: 1800px;
+    height: auto;
+	margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    padding: 2rem;
+}
+h2 {
+    margin: 1rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    font-size: 2rem;
+	padding: 1rem;
+}
+h1 {
+	font-size: 2.5rem;
+	color: white;
+    display: flex ;   
+    text-align: left;
+	margin: 3rem;
+    align-items: center;
+}
+figure {
+    height: 361.78px ;
+    width: auto;
+    margin: 2rem auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: 361.78px;
+    border-radius: 10px;
+}
+figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #17223d;
+    padding: 1rem;
+    
+}
+header {
+    background-color: #17223d;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+footer {
+    background-color: #17223d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	color: #fff;
+    flex-direction: row;
+    background-color: #17223d;
+    font-size: 1.75rem;
+    
+}
+.navigation a {
+    display: block;
+    padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+nav {
+    width: 100%;
+    margin: 3rem auto;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+    border-radius: 10px;
+}
+#menu {
+    position: absolute;
+}
