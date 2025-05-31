@@ -41,7 +41,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-      "images/manti_temple_lds.jpeg" // Local image path relative to your HTML file
+      "https://www.churchofjesuschrist.org/imgs/d9c313eb96c173d0ad32f21f461ce994129c9e8d/full/640%2C/0/default" 
   },
   {
     templeName: "Payson Utah",
