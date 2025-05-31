@@ -108,12 +108,18 @@ const temples = [
   "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/400x250/san-diego-california-temple-exterior-1518361-wallpaper.jpg"
 }
 ];
-const oldtemples = document.querySelector('#oldtemples');
+
+// Create cards for all temples
+createTempleCard(temples);
+const oldtemples = document.querySelector('#Old');
 if (oldtemples) {
   oldtemples.addEventListener('click', () => {
+    // Clear existing cards
+    document.querySelector('.temples').innerHTML = '';
+    // Filter and display only old temples (dedicated before 1900)
     const filteredTemples = temples.filter(temple => {
       const year = parseInt(temple.dedicated.split(',')[0]);
-      return !isNaN(year) && year < 1900;
+      return year < 1900;
     });
     createTempleCard(filteredTemples);
   });
@@ -123,7 +129,6 @@ if (oldtemples) {
 
 
 function createTempleCard(templesArray) {
-  document.querySelector('.temples').innerHTML = ''; // Clear previous cards
   templesArray.forEach(temple => {
     let card = document.createElement('section');
     let name = document.createElement('h3');
