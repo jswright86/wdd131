@@ -33,7 +33,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/7210c09be95c4474772ae52e5f31c23c08112784/full/640%2C/0/default"
+      "https://www.churchofjesuschrist.org/imgs/7210c09be95c4474772ae52e5f31c23c08112784/full/640%2C/0/default"
   },
   {
     templeName: "Manti Utah",
@@ -41,7 +41,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/d9c313eb96c173d0ad32f21f461ce994129c9e8d/full/640%2C/0/default"
+      "images/manti_temple_lds.jpeg" // Local image path relative to your HTML file
   },
   {
     templeName: "Payson Utah",
@@ -49,15 +49,15 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://churchofjesuschrist.org/imgs/595590aa805080f86e63368963860d9f3dfb3bfd/full/640%2C/0/default"
+      "https://churchofjesuschrist.org/imgs/595590aa805080f86e63368963860d9f3dfb3bfd/full/640%2C/0/default"
   },
   {
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
     area: 6861,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    image:
+      "https://www.churchofjesuschrist.org/imgs/9f541175bcfc11eca77eeeeeac1ea52488fbff2f/full/640%2C/0/default"
   },
   {
     templeName: "Washington D.C.",
@@ -65,7 +65,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+      "https://churchofjesuschrist.org/imgs/9bbc2a18ee4b11eb90efeeeeac1e68824aabff60/full/640%2C/0/default"
   },
   {
     templeName: "Lima Perú",
@@ -73,7 +73,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+      "https://www.churchofjesuschrist.org/imgs/b800f5245ce311fb987aabd6ee6b2230b7c8b04f/full/640%2C/0/default"
   },
   {
     templeName: "Mexico City Mexico",
@@ -81,7 +81,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://www.churchofjesuschrist.org/imgs/2dbb637a01da374959e9b50dd072294645917ea4/full/640%2C/0/default"
   },
   {
     templeName: "Salt Lake City Utah",
@@ -89,24 +89,24 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/92c33bcbf9cf85483e008d6871f8ced5f6d7b661/full/640%2C/0/default"
+      "https://www.churchofjesuschrist.org/imgs/92c33bcbf9cf85483e008d6871f8ced5f6d7b661/full/640%2C/0/default"
   },
-{
-  templeName: "San Antonio Texas",
-  location: "San Antonio, Texas, United States",
-  dedicated: "2005, May, 15",
-  area: 16800,
-  imageUrl:
-  "https://www.churchofjesuschrist.org/imgs/1dc0b8602087f0f95c062dd122dd45e080d25432/full/640%2C/0/default"
+  {
+    templeName: "San Antonio Texas",
+    location: "San Antonio, Texas, United States",
+    dedicated: "2005, May, 15",
+    area: 16800,
+    imageUrl:
+      "https://www.churchofjesuschrist.org/imgs/1dc0b8602087f0f95c062dd122dd45e080d25432/full/640%2C/0/default"
   },
-{
-  templeName: "San Diego California",
-  location: "San Diego, California, United States",
-  dedicated: "1993, June, 19",
-  area: 72000,
-  imageUrl:
-  "https://www.churchofjesuschrist.org/imgs/9fc6d53550ed3243fb8eca9ebceb284d4865e7db/full/640%2C/0/default"
-}
+  {
+    templeName: "San Diego California",
+    location: "San Diego, California, United States",
+    dedicated: "1993, June, 19",
+    area: 72000,
+    imageUrl:
+      "https://www.churchofjesuschrist.org/imgs/9fc6d53550ed3243fb8eca9ebceb284d4865e7db/full/640%2C/0/default"
+  }
 ];
 
 // Create cards for all temples
