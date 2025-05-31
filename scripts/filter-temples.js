@@ -56,7 +56,7 @@ const temples = [
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
     area: 6861,
-    image:
+    imageUrl:
       "https://www.churchofjesuschrist.org/imgs/9f541175bcfc11eca77eeeeeac1ea52488fbff2f/full/640%2C/0/default"
   },
   {
@@ -73,7 +73,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-      "https://www.churchofjesuschrist.org/imgs/b800f5245ce311fb987aabd6ee6b2230b7c8b04f/full/640%2C/0/default"
+      "https://www.churchofjesuschrist.org/imgs/b800f5245ce311fb987aabd6ee6b2230b7c8b04f/full/640%2C/0/default" 
   },
   {
     templeName: "Mexico City Mexico",
