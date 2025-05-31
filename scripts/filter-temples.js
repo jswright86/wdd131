@@ -137,6 +137,7 @@ function createTempleCard(templesArray) {
     let area = document.createElement('p');
     let image = document.createElement('img');
 
+
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
@@ -151,6 +152,6 @@ function createTempleCard(templesArray) {
     card.appendChild(area);
     card.appendChild(image);
 
-    document.querySelector('.temples').appendChild(card);
+    document.querySelector(".res-grid").appendChild(card);
   });
 }
