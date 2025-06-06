@@ -34,3 +34,8 @@ body {
     font-family: var(--font-1);
     margin: 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    border: var(--text-color1) 2px solid;
+}
