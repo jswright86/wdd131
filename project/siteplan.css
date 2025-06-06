@@ -1,0 +1,36 @@
+
+:root {
+    --bg-color1: #FEFAE0;
+    --bg-color2: #8d582a;
+    --text-color1: #283618;
+    --text-color2: #FEFAE0;
+    --highlight-color: #DDA15E;
+    --border-color: #BC6C25;
+    --font-1: 'handlee';
+    --font-2: 'Cagliostro';
+}
+.cagliostro-regular {
+  font-family: "Cagliostro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.handlee-regular {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header, footer{
+    background-color: var(--bg-color2);
+    color: var(--text-color2);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-1);
+}
+body {
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
+    font-family: var(--font-1);
+    margin: 0;
+}

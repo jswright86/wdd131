@@ -75,10 +75,14 @@ figure {
     margin: 2rem auto;
 }
 img {
+    
     max-width: 100%;
     height: auto;
     width: 361.78px;
     border: #a0a0a0 solid 2px;
+    
+
+    
 }
 figcaption {
     text-align: center;
