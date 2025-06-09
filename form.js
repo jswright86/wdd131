@@ -36,7 +36,7 @@ function populateProducts(products) {
     })
 };
 
-console.log(localStorage.getItem("reviewSubmit")); // Debugging output
+
 
 document.getElementById("reviewSubmit").addEventListener("click", function(event) {
     event.preventDefault(); // Prevent form submission
