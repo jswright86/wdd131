@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        </header>
+    <main>
+    <form method="get" action="review.html" class="rf">
+    <div>
+        <label for="product">Product Name <span class="req">*</span></label>
+        <select id="product" name="product" title="prduct" required class="product">
+            <option value="" disabled selected>Choose a product...</option>  
+        </select>
+    </div>
+   
+<div>      
+<label for="fivestar">Overall Rating <span class="req">*</span></label>
+<fieldset class="stars">
+	<input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	<input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	<input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	<input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	<input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+</fieldset>
+</div>
+<div>
+    <label for="DOI">Date of Installation <span class="req">*</span></label>
+    <input type="date" id="DOI" name="installDate" required>
+</div>
+
+<div>   
+    <label for="design">Which features did you find useful?
+    </label>
+    <p>(Check all that apply)</p>
+
+    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+    <label><input type="checkbox" id="eou" name="ease of use" value="yes">Ease of Use</label>
+    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+</div>
+<div>
+    <label for="review">Written Review <span class="opt">(Optional)</span></label>
+    
+    <textarea id="review" name="review"></textarea>
+</div>
+<div>
+    <label for="reviewerName">Your Name <span class="opt">(Optional)</span></label>
+    <input type="text" id="reviewerName" name="reviewerName">
+</div>
+<div>
+    <input type="submit" value="Leave Review">
+</div>    
+</form>
+    </main>
+    <footer>
+        <p>&copy; 2023 The Woodworkers Guide</p>
+    </footer>
+</body>
+</html>
+

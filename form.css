@@ -1,0 +1,168 @@
+header {
+    background-color: #161a3d;
+    color: white;
+    
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    max-width: 800px;
+    width: auto;
+}
+footer {
+    background-color: #161a3d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 800px;
+    width: auto;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+   
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+    height: 20px;
+    align-items: center;
+    
+}
+
+.stars > label {
+	color: rgb(202, 164, 60);
+	width: 40px;
+	height: 20px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+    
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+    color:grey
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+    color:  rgb(202, 164, 60);
+}   
+
+div {
+    margin-top: 1rem;
+    padding: 0;
+    font-size: .9rem;
+}
+
+label  {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .25rem;
+    color: black;
+    font-size: 1.1rem;
+    
+}
+.rf span[class="opt"]
+{
+     color: #1f2b91;
+    text-decoration: none;
+}
+
+body {
+    max-width: 800px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+    justify-self: center;
+    
+    
+    
+}
+main {
+    padding: 1rem;
+   
+    background-color:  #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    max-width: 800px;
+    width: auto;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0;
+}
+
+.rf input[type="checkbox"] {
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rf input[type="date"] {
+    width: 95%;
+    max-width: 600px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rf input[type="text"] {
+    width: 95%;
+    max-width: 600px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rf textarea[id="review"] {
+    width: 95%;
+    max-width: 600px;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    
+}
+.rf input[type="submit"] {
+    background-color: #8e9d9e;
+    color: rgb(0, 0, 0);
+    padding: 0.7rem 0rem;
+    border: 1px solid #091052;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 99%;
+    
+    margin: 1rem 0;
+    box-shadow: 1 1 5px rgba(0,0,0,.1);
+    justify-self: center;
+   
+    font-size: 1.5rem;
+}
+.product {
+    width: 99%;
+    max-width: 600px;
+    align-items: center;
+    padding:.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
