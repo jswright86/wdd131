@@ -39,8 +39,13 @@ function populateProducts(products) {
 
 let submitCount = 0;
 
-document.getElementById("reviewSubmit").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent default submission for demo purposes
-    submitCount++;
-    console.log("Form submitted", submitCount, "times.");
-});
+const reviewSubmitBtn = document.getElementById("reviewSubmit");
+if (reviewSubmitBtn) {
+    reviewSubmitBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default submission for demo purposes
+        submitCount++;
+        console.log("Form submitted", submitCount, "times.");
+        localStorage.setItem("submitCount", submitCount);
+    });
+}
+
