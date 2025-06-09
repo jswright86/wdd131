@@ -37,25 +37,10 @@ function populateProducts(products) {
 };
 
 
+let submitCount = 0;
 
 document.getElementById("reviewSubmit").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    const product = document.getElementById("product").value;
-    const rating = document.querySelector('input[name="rating"]:checked').value;
-    const review = document.getElementById("review").value;
-
-    if (product && rating && review) {
-        const reviewData = {
-            product: product,
-            rating: rating,
-            review: review
-        };
-
-        localStorage.setItem("reviewSubmit", JSON.stringify(reviewData));
-        console.log("Review submitted:", reviewData); // Debugging output
-        alert("Review submitted successfully!");
-    } else {
-        alert("Please fill out all fields before submitting.");
-    }
+    event.preventDefault(); // Prevent default submission for demo purposes
+    submitCount++;
+    console.log("Form submitted", submitCount, "times.");
 });
