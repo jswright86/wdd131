@@ -89,7 +89,8 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     justify-self: center;
-    
+    background-color: white;
+    ;
     
     
 }
@@ -99,14 +100,14 @@ fieldset {
 }
 main {
     padding: 1rem;
-   
+    margin: 2rem 0;
     background-color:  #dbdbdb;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     max-width: 800px;
     width: auto;
-}
+}   
 p {
     font-size: 1rem;
     line-height: 1.5;
@@ -145,9 +146,9 @@ p {
 }
 .rf input[type="submit"] {
     background-color: #881010;
-    color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
     padding: 0.7rem 0rem;
-    border: 1px solid #4e0101;
+    border: 1px solid #440101;
     border-radius: 4px;
     cursor: pointer;
     width: 99%;
