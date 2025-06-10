@@ -37,15 +37,42 @@ function populateProducts(products) {
 };
 
 
-let submitCount = 0;
 
-const reviewSubmitBtn = document.getElementById("reviewSubmit");
-if (reviewSubmitBtn) {
-    reviewSubmitBtn.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default submission for demo purposes
-        submitCount++;
-        console.log("Form submitted", submitCount, "times.");
-        localStorage.setItem("submitCount", submitCount);
+document.getElementById('submit').addEventListener('click', function(event) {
+    // Prevent any default form submission
+    event.preventDefault();
+    
+    if (validateForm()) {
+        submitReview();
+    }
+});
+
+function validateForm() {
+    const requiredInputs = document.querySelectorAll('input[required]');
+    
+    const allRequiredFilled = Array.from(requiredInputs).every(input => {
+        return input.value.trim() !== '';
     });
+    
+    if (!allRequiredFilled) {
+        alert('Please complete all required fields that are marked with an asterisk (*) before submitting.');
+        return false;
+    }
+    
+    return true;
 }
 
+function submitReview() {
+    // Increment review count
+    let numReviews = Number(localStorage.getItem("reviewSubmit")) || 0;
+    numReviews++;
+    localStorage.setItem("reviewSubmit", numReviews);
+    
+    // Success actions
+    alert('Review submitted successfully!');
+    console.log(`Total reviews submitted: ${numReviews}`);
+    
+    // Optional: Clear form or redirect
+    // document.querySelector('form').reset();
+}
+    
