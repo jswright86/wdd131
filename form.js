@@ -71,8 +71,6 @@ function submitReview() {
     // Success actions
     alert('Review submitted successfully!');
     console.log(`Total reviews submitted: ${numReviews}`);
-    
-    // Optional: Clear form or redirect
-    // document.querySelector('form').reset();
+   
 }
     
