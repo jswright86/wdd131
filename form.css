@@ -93,10 +93,14 @@ body {
     
     
 }
+fieldset {
+    border: none;
+    
+}
 main {
     padding: 1rem;
    
-    background-color:  #f4f4f4;
+    background-color:  #dbdbdb;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -109,7 +113,9 @@ p {
     margin: 0 0;
 }
 
-.rf input[type="checkbox"] {
+.rf input[type="checkbox"]
+
+ {
     margin-right: 0.5rem;
     height: 20px;
     width: 20px;
@@ -117,20 +123,16 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.rf input[type="date"] {
-    width: 95%;
-    max-width: 600px;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+.rf input[type="date"],
 .rf input[type="text"] {
     width: 95%;
     max-width: 600px;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
 }
+
 .rf textarea[id="review"] {
     width: 95%;
     max-width: 600px;
@@ -142,18 +144,16 @@ p {
     
 }
 .rf input[type="submit"] {
-    background-color: #8e9d9e;
-    color: rgb(0, 0, 0);
+    background-color: #881010;
+    color: rgb(250, 250, 250);
     padding: 0.7rem 0rem;
-    border: 1px solid #091052;
+    border: 1px solid #4e0101;
     border-radius: 4px;
     cursor: pointer;
     width: 99%;
-    
     margin: 1rem 0;
-    box-shadow: 1 1 5px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
     justify-self: center;
-   
     font-size: 1.5rem;
 }
 .product {
@@ -165,4 +165,5 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-size: 1rem;
 }
