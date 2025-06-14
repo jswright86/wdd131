@@ -643,3 +643,72 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+// Hamburger Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Create hamburger button
+    const hamburger = document.createElement('div');
+    hamburger.className = 'hamburger';
+    hamburger.innerHTML = `
+        <span></span>
+        <span></span>
+        <span></span>
+    `;
+    
+    // Create overlay for mobile menu
+    const overlay = document.createElement('div');
+    overlay.className = 'nav-overlay';
+    
+    // Add hamburger and overlay to header
+    const header = document.querySelector('header');
+    header.appendChild(hamburger);
+    document.body.appendChild(overlay);
+    
+    // Get navigation element
+    const nav = document.querySelector('header nav');
+    
+    // Toggle menu function
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        
+        // Prevent body scrolling when menu is open
+        if (nav.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+    
+    // Close menu function
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    // Event listeners
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+    
+    // Close menu when clicking on nav links (for single-page navigation)
+    const navLinks = document.querySelectorAll('header nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    // Close menu when window is resized to desktop size
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+    
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && nav.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+});
