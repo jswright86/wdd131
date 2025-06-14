@@ -19,9 +19,9 @@
 <body>
     <header>
         <h1>The Woodworkers Guide</h1>
-        <img src="build_of_the_week.webp" alt="Build of the Week" width="977" height="550" id="BOTW" loading="lazy">
-        <img src="logo.jpg" alt="Woodworkers Guide Logo" id="logo" width="100" loading="lazy">
-        
+        <img src="images/build_of_the_week.webp" alt="Build of the Week" width="977" height="550" id="BOTW" loading="lazy">
+        <img src="images/logo.jpg" alt="Woodworkers Guide Logo" id="logo" width="100" loading="lazy">
+
         <p>Congrats to Joshua Wright on getting BUILDER OF THE WEEK!</p>
 
         
@@ -30,6 +30,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
                
                 
             </ul>
@@ -72,6 +73,28 @@
     
 
      </main>
+     <form method="post" action="home.html" class="contact-form">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or comments, please fill out the form below:</p>
+        <label for="subject">Reason For Contact</label>
+        <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a reason...</option>
+            <option value="general">General Inquiry</option>
+            <option value="question">Question About A Project</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" id="form-button">Send Message</button>
+     </form>
     <footer>
         <p>&copy; 2023 The Woodworkers Guide. All rights reserved.</p>
         <p>Contact: info@thewoodworkersguide.net <a href="mailto:"></a></p>

@@ -1,61 +1,61 @@
 const imageArray = [
     {
-        src: "tools.webp",
+        src: "images/tools.webp",
         alt: "Essential Tools",
         caption: "Essential Tools for Woodworking"
     },
     {
-        src: "lumber_yard.webp",
+        src: "images/lumber_yard.webp",
         alt: "Lumber Yard",
         caption: "Lumber Yard Essentials"
     },
     {
-        src: "diff_woods.webp",
+        src: "images/diff_woods.webp",
         alt: "Different Woods",
         caption: "Different Types of Wood"
     },
     {
-        src: "woodworking_proj.webp",
+        src: "images/woodworking_proj.webp",
         alt: "Woodworking Projects",
         caption: "Woodworking Projects"
     },
     {
-        src: "rubio_monocoat.webp",
+        src: "images/rubio_monocoat.webp",
         alt: "Wood Staining",
         caption: "Wood Staining Techniques"
     },
     {
-        src: "tablesaw.webp",
+        src: "images/tablesaw.webp",
         alt: "Table Saw",
         caption: "Dos and Don'ts with your most used tool"
     },
     {
-        src: "workbench.webp",
+        src: "images/workbench.webp",
         alt: "Woodworking Bench",
         caption: "Setting Up Your Workbench"
     },
     {
-        src: "handtools.webp",
+        src: "images/handtools.webp",
         alt: "Hand Tools",
         caption: "Traditional Hand Tools"
     },
     {
-        src: "wood_joinery.webp",
+        src: "images/wood_joinery.webp",
         alt: "Wood Joints",
         caption: "Understanding Wood Joints"
     },
     {
-        src: "routers.webp",
+        src: "images/routers.webp",
         alt: "Routers",
         caption: "All About Routers"
     },
     {
-        src: "woodcarving.webp",
+        src: "images/woodcarving.webp",
         alt: "Wood Carving",
         caption: "Wood Carving Artistry"
     },
     {
-        src: "ppe.webp",
+        src: "images/ppe.webp",
         alt: "Workshop Safety",
         caption: "Workshop Safety Guidelines"
     }
@@ -65,49 +65,49 @@ const imageArray = [
 const projectsData = {
     beginner: [
         {
-            image: "bracelet.webp",
+            image: "images/bracelet.webp",
             caption: "Elegant Hole Saw Bracelet",
             url: "https://www.woodmagazine.com/project-plans/free/free-elegant-hole-saw-bracelet-woodworking-plan",
             loading: "lazy"
         },
         {
-            image: "clock.webp",
+            image: "images/clock.webp",
             caption: "Art Deco Desk Clock",
             url: "https://www.woodmagazine.com/project-plans/free/free-art-deco-desk-clock-woodworking-plan",
             loading: "lazy"
         },
         {
-            image: "shelves.webp",
+            image: "images/shelves.webp",
             caption: "Floating Wall Shelves",
             url: "https://www.woodmagazine.com/project-plans/furniture/bookcases-shelving/floating-wall-shelves-downloadable-plan",
             loading: "lazy"
         },
         {
-            image: "picture_frame.webp",
+            image: "images/picture_frame.webp",
             caption: "Picture Frame",
             url: "https://www.woodmagazine.com/woodworking-plans/gifts-accessories/picture-frame-woodworking-plan",
             loading: "lazy"
         },
         {
-            image: "tablesaw_workbench.webp",
+            image: "images/tablesaw_workbench.webp",
             caption: "Space-saving Double-duty Tablesaw Workbench",
             url: "https://www.woodmagazine.com/project-plans/free/free-plan-space-saving-double-duty-tablesaw-workbench",
             loading: "lazy"
         },
         {
-            image: "flagcase.webp",
+            image: "images/flagcase.webp",
             caption: "Flag Case",
             url: "https://www.woodmagazine.com/project-plans/free/flag-case",
             loading: "lazy"
         },
         {
-            image: "play_center.webp",
+            image: "images/play_center.webp",
             caption: "Keep It Tidy Play Center",
             url: "https://www.woodmagazine.com/woodworking-plans/gifts-accessories/wood-toys/keep-it-tidy-play-center-plan",
             loading: "lazy"
         },
         {
-            image: "easel.webp",
+            image: "images/easel.webp",
             caption: "Young Artist's Easel",
             url: "https://www.woodmagazine.com/woodworking-plans/gifts-accessories/wood-toys/young-artists-easel-woodworking-plan",
             loading: "lazy"
@@ -115,49 +115,49 @@ const projectsData = {
     ],
     experienced: [
         {
-            image: "roll_island.webp",
+            image: "images/roll_island.webp",
             caption: "Rolling Kitchen Island",
             url: "https://www.woodmagazine.com/project-plans/furniture/cabinets-storage/rolling-kitchen-island-downloadable-plan",
             loading: "lazy"
         },
         {
-            image: "classic_bookcase.webp",
+            image: "images/classic_bookcase.webp",
             caption: "Classic Bookcase",
             url: "https://www.woodmagazine.com/project-plans/furniture/bookcases-shelving/classic-bookcase-downloadable-plan",
             loading: "lazy"
         },
         {
-            image: "study_desk.webp",
+            image: "images/study_desk.webp",
             caption: "Built-to-Suit Study Desk",
             url: "https://www.woodmagazine.com/project-plans/furniture/desks/build-to-suit-study-desk-downloadable-plan",
             loading: "lazy"
         },
         {
-            image: "farmhouse_table.webp",
+            image: "images/farmhouse_table.webp",
             caption: "Farmhouse Table and Benches",
             url: "https://www.woodmagazine.com/project-plans/furniture/tables/farmhouse-table-woodworking-plan",
             loading: "lazy"
         },
         {
-            image: "garden_bench.webp",
+            image: "images/garden_bench.webp",
             caption: "Outdoor Garden Bench",
             url: "https://www.familyhandyman.com/garden-bench",
             loading: "lazy"
         },
         {
-            image: "potting_bench.webp",
+            image: "images/potting_bench.webp",
             caption: "Potting Bench",
             url: "https://www.woodmagazine.com/woodworking-plans/free/potting-bench",
             loading: "lazy"
         },
         {
-            image: "mobile_crane.webp",
+            image: "images/mobile_crane.webp",
             caption: "Construction-grade Mobile Crane",
             url: "https://www.woodmagazine.com/woodworking-plans/free/mobile-crane",
             loading: "lazy"
         },
         {
-            image: "display_case.webp",
+            image: "images/display_case.webp",
             caption: "Bow-front Display Case",
             url: "https://www.woodmagazine.com/woodworking-plans/furniture/living-room/free-bow-front-display-case-plan",
             loading: "lazy"
@@ -166,49 +166,49 @@ const projectsData = {
     ],
     master: [
         {
-            image: "media_center.webp",
+            image: "images/media_center.webp",
             caption: "Component-Ready Flat-Screen Media Center",
             url: "https://www.woodmagazine.com/project-plans/furniture/entertainment-centers/component-ready-flat-screen-media-center-downloadable",
             loading: "lazy"
         },
         {
-            image: "entertain_center.webp",
+            image: "images/entertain_center.webp",
             caption: "Home Entertainment Center",
             url: "https://www.woodmagazine.com/woodworking-plans/furniture/living-room/compact-home-entertainment-center-plan",
             loading: "lazy"
         },
         {
-            image: "nesting_end_table.webp",
+            image: "images/nesting_end_table.webp",
             caption: "Nesting End Tables",
             url: "https://www.woodmagazine.com/woodworking-plans/free/nesting-end-tables-plan",
             loading: "lazy"
         },
         {
-            image: "pencil_bed.webp",
+            image: "images/pencil_bed.webp",
             caption: "Pencil Post Bed",
             url: "https://www.woodmagazine.com/project-plans/furniture/bed-bedroom-sets/pencil-post-bed-downloadable-plan",
             loading: "lazy"
         },
         {
-            image: "keepsake_box.webp",
+            image: "images/keepsake_box.webp",
             caption: "Keepsake Box",
             url: "https://www.woodmagazine.com/project-plans/free/free-plan-keepsake-box",
             loading: "lazy"
         },
         {
-            image: "shaker_dresser.webp",
+            image: "images/shaker_dresser.webp",
             caption: "Shaker- Style Dresser with Mirror",
             url: "https://www.woodmagazine.com/project-plans/furniture/bed-bedroom-sets/shaker-style-dresser-with-valet-and-mirror-downloadable",
             loading: "lazy"
         },
         {
-            image: "builtin_bookcase.webp",
+            image: "images/builtin_bookcase.webp",
             caption: "Built-In Bookcase",
             url: "https://www.woodmagazine.com/woodworking-plans/free/free-built-in-bookcase-and-cabinet-plan",
             loading: "lazy"
         },
         {
-            image: "end_table.webp",
+            image: "images/end_table.webp",
             caption: "Supercharged End Table",
             url: "https://www.woodmagazine.com/project-plans/free/free-plan-supercharged-end-table",
             loading: "lazy"
@@ -225,9 +225,7 @@ const totalGroups = Math.ceil(imageArray.length / imagesPerGroup);
 function createCarousel() {
     const container = document.querySelector('.image-container');
     const indicatorContainer = document.querySelector('.page-indicator');
-   
-
-    // Create indicator dots
+// Create indicator dots
     indicatorContainer.innerHTML = '';
     for (let i = 0; i < totalGroups; i++) {
         const dot = document.createElement('div');
@@ -236,8 +234,7 @@ function createCarousel() {
         dot.addEventListener('click', () => goToGroup(i));
         indicatorContainer.appendChild(dot);
     }
-
-    // Update total groups display
+// Update total groups display
     document.getElementById('total-groups').textContent = totalGroups;
     
     // Show initial group
@@ -346,7 +343,7 @@ function showHomeContent() {
     
     // Create second paragraph with styled span
     const paragraph2 = document.createElement('p');
-    paragraph2.innerHTML = 'Our <span>Purpose</span> is to provide a comprehensive guide for woodworking enthusiasts of all skill levels. Whether you\'re a beginner looking for your first project or a seasoned pro seeking advanced techniques, we\'ve got you covered.';
+    paragraph2.innerHTML = 'The Woodworkers Guide is a resource designed to help woodworking enthusiasts of all skill levels. Woodworking is an extremely rewarding hobby that allows you to create beautiful and functional pieces. To many it is not only a hobby, but an art. Taking raw material and crafting it into a beautiful finished piece can be a very fulfilling experience. Whether you are a beginner looking for your first project or an experienced woodworker seeking advanced techniques, this guide has something for everyone.';
     
     // Append elements to section
     homeSection.appendChild(title);
@@ -355,7 +352,7 @@ function showHomeContent() {
     
     // Create the profile image
     const profileImg = document.createElement('img');
-    profileImg.src = 'profile_photo.webp';
+    profileImg.src = 'images/profile_photo.webp';
     profileImg.alt = 'Woodworker Image';
     profileImg.width = 500;
     profileImg.id = 'profile';
@@ -364,8 +361,39 @@ function showHomeContent() {
     // Append both elements to the projects container
     projectsContainer.appendChild(homeSection);
     projectsContainer.appendChild(profileImg);
+
     
+ 
     
+}
+function showAboutContent() {
+    const projectsContainer = document.querySelector('.projects-click');    
+
+    // Clear existing content
+    projectsContainer.innerHTML = '';
+
+    // Create the about content section
+    const aboutSection = document.createElement('section'); 
+    aboutSection.className = 'about';
+
+    const title = document.createElement('h2');
+    title.textContent = 'About The Woodworkers Guide';
+    const paragraph1 = document.createElement('p');
+    paragraph1.textContent = 'Started by Josh Wright in 2023 the Woodworkers Guide is a resource for all when it comes to woodworking. Josh has been passionate in woodworking since he was teenager  working for a custom cabinet maker as an apprentice. He worked with him throughout his teenage years and eventually started his own company specializing in highly custom cabinetry and millwork. He then started The Woodworkers Guide as a way to help others who may not have a mentor to learn and keep the art of woodworking alive. With years of experience in woodworking, we aim to provide valuable insights, tips, and project ideas to help fellow enthusiasts improve their skills and enjoy the craft.';
+    const paragraph2 = document.createElement('p');
+    paragraph2.textContent = 'We aim to inspire creativity, promote safety, and foster a community of woodworkers who share a passion for crafting beautiful and functional pieces. From essential tools and materials to step-by-step project plans, our guide is designed to help you succeed in your woodworking journey.';
+    const paragraph3 = document.createElement('p');
+    paragraph3.textContent = 'Join us as we explore the world of woodworking, share tips and tricks, and celebrate the artistry of this timeless craft. Whether you\'re building furniture, creating decorative items, or honing your skills, The Woodworkers Guide is here to support you every step of the way.';
+
+    aboutSection.appendChild(title);
+    aboutSection.appendChild(paragraph1);
+    aboutSection.appendChild(paragraph2);
+    aboutSection.appendChild(paragraph3);
+
+    projectsContainer.appendChild(aboutSection);
+
+    // Scroll to projects section
+    projectsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Function to display projects for a specific skill level
@@ -511,7 +539,17 @@ function setupHomeLink() {
         });
     }
 }
+// Function to handle the "About" link
+function setupAboutLink() {
+    const aboutLink = document.querySelector('nav a[href="about.html"]');
 
+    if (aboutLink) {
+        aboutLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showAboutContent();
+        });
+    }
+}
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Create the carousel
@@ -534,6 +572,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Setup home link functionality
     setupHomeLink();
+
+    // Setup about link functionality
+    setupAboutLink();
     
     // Show home content by default
     showHomeContent();
@@ -542,4 +583,63 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Dropdown menu initialized');
     console.log('Projects system ready');
     console.log('Home content functionality added');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the contact link and form elements
+    const contactLink = document.querySelector('nav a[href="contact.html"]');
+    const contactForm = document.querySelector('.contact-form');
+    
+    // Hide the contact form initially (you'll need to add CSS for this)
+    if (contactForm) {
+        contactForm.style.display = 'none';
+    }
+    
+    // Add event listener to the contact link
+    if (contactLink && contactForm) {
+        contactLink.addEventListener('click', function(e) {
+            // Prevent the default link behavior (navigating to contact.html)
+            e.preventDefault();
+            
+            // Show the contact form
+            contactForm.style.display = 'block';
+            
+            // Smooth scroll to the contact form
+            contactForm.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Collect form data
+            const formData = new FormData(contactForm);
+            const formObj = {};
+            formData.forEach((value, key) => {
+                formObj[key] = value;
+            });
+
+            // Retrieve existing submissions or initialize array
+            const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
+            submissions.push(formObj);
+
+            // Store updated submissions array
+            localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+
+            // Optionally show a confirmation message
+            alert('Thank you for contacting us!');
+
+            // Optionally reset form and hide it
+            contactForm.reset();
+            contactForm();
+
+        });
+    }
 });
