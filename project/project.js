@@ -225,11 +225,7 @@ const totalGroups = Math.ceil(imageArray.length / imagesPerGroup);
 function createCarousel() {
     const container = document.querySelector('.image-container');
     const indicatorContainer = document.querySelector('.page-indicator');
-    
-    if (!container) {
-        console.error('Image container not found');
-        return;
-    }
+   
 
     // Create indicator dots
     indicatorContainer.innerHTML = '';
@@ -290,9 +286,9 @@ function updateUI() {
     // Update group counter
     currentGroupSpan.textContent = currentGroupIndex + 1;
 
-    // Update button states
-    prevBtn.disabled = currentGroupIndex === 0;
-    nextBtn.disabled = currentGroupIndex === totalGroups - 1;
+    // Buttons are always enabled for looping carousel
+    prevBtn.disabled = false;
+    nextBtn.disabled = false;
 
     // Update indicator dots
     indicators.forEach((dot, index) => {
@@ -300,19 +296,17 @@ function updateUI() {
     });
 }
 
-// Navigation functions
+// Navigation functions with looping
 function goToNextGroup() {
-    if (currentGroupIndex < totalGroups - 1) {
-        currentGroupIndex++;
-        showCurrentGroup();
-    }
+    // Loop back to first group after last group
+    currentGroupIndex = (currentGroupIndex + 1) % totalGroups;
+    showCurrentGroup();
 }
 
 function goToPrevGroup() {
-    if (currentGroupIndex > 0) {
-        currentGroupIndex--;
-        showCurrentGroup();
-    }
+    // Loop to last group when going backwards from first group
+    currentGroupIndex = currentGroupIndex === 0 ? totalGroups - 1 : currentGroupIndex - 1;
+    showCurrentGroup();
 }
 
 function goToGroup(groupIndex) {
@@ -333,12 +327,7 @@ function handleKeyboardNavigation(event) {
 
 // Function to display home content
 function showHomeContent() {
-    const projectsContainer = document.querySelector('.projects-click');
-    
-    if (!projectsContainer) {
-        console.error('Projects container not found');
-        return;
-    }
+    const projectsContainer = document.querySelector('.projects-click')
     
     // Clear existing content
     projectsContainer.innerHTML = '';
@@ -376,8 +365,7 @@ function showHomeContent() {
     projectsContainer.appendChild(homeSection);
     projectsContainer.appendChild(profileImg);
     
-    // Scroll to home content
-    projectsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
 }
 
 // Function to display projects for a specific skill level
@@ -385,10 +373,7 @@ function showProjects(skillLevel) {
     const projectsContainer = document.querySelector('.projects-click');
     const projects = projectsData[skillLevel];
     
-    if (!projects || !projectsContainer) {
-        console.error('Projects data or container not found');
-        return;
-    }
+    
     
     // Clear existing content
     projectsContainer.innerHTML = '';
@@ -444,10 +429,8 @@ function createDropdownMenu() {
     const nav = document.querySelector('nav ul');
     const projectsLink = nav.querySelector('a[href="projects.html"]');
     
-    if (!projectsLink) {
-        console.error('Projects link not found');
-        return;
-    }
+    
+    
     
     // Get the parent li element
     const projectsLi = projectsLink.parentElement;
